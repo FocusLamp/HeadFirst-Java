@@ -14,6 +14,12 @@ class BottleSong {
             System.out.println("And if one green bottle should accidentally fall,");
             bottlesNum = bottlesNum - 1;
 
+            if (bottlesNum == 1) {
+                word = "bottle";
+            } else {
+                word = "bottles";
+            }
+
             if (bottlesNum > 0) {
                 System.out.println("There'll be " + bottlesNum + " green " + word + ", hanging on the wall");
             } else {

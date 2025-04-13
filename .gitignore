@@ -4,6 +4,8 @@ test.java
 # IntelliJ project files
 .idea/
 out/
+Java-Learning.iml
+
 
 # Compiled class file
 *.class
@@ -13,6 +15,7 @@ out/
 
 # BlueJ files
 *.ctxt
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -25,8 +28,4 @@ out/
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
 

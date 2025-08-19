@@ -1,7 +1,9 @@
+import Chapter05.GameHelp;
+
 public class SimpleStartupGame {
     public static void main(String[] args) {
         int numOfGuesses = 0;
-        GameHelper helper = new GameHelper();
+        GameHelp help = new GameHelp();
 
         SimpleStartup theStartup = new SimpleStartup();
         int randomNum = (int) (Math.random() * 5);
@@ -12,7 +14,7 @@ public class SimpleStartupGame {
 
 
         while (isAlive) {
-            int guess = helper.getUserInput("Enter a number");
+            int guess = help.getUserInput("Enter a number");
             String result = theStartup.checkYourself(guess);
             numOfGuesses++;
 
@@ -21,5 +23,6 @@ public class SimpleStartupGame {
                 System.out.println("You took " + numOfGuesses + " guesses");
             }
         }
-    } 
-} 
+    }
+
+}
